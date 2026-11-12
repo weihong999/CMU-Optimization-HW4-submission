@@ -1,0 +1,40 @@
+CMU 18-660 Optimization HW4
+================================
+
+Exercise 2.1 — SGD + Momentum
+--------------------------------
+
+cd Implementation/jax_stochopt
+
+python hw4_2_1_sweep.py \
+  --backend gpu \
+  --dtype float64 \
+  --steps 400 \
+  --out results_2_1
+
+
+Exercise 2.2 — Langevin Dynamics
+--------------------------------
+
+cd Implementation/jax_stochopt
+
+python hw4_2_2_experiments.py \
+  --backend gpu \
+  --chains 128 \
+  --seeds 10 \
+  --out results_2_2
+
+
+Exercise 3.1 — Chance-Constrained Optimization
+-----------------------------------------------
+
+cd Application/geocomp_python
+
+python -m geocomp --case all --alpha 0.90 --out results_a090 --verbose
+
+python -m geocomp --case all --alpha 0.95 --out results_a095 --verbose
+
+python -m geocomp --case all --alpha 0.99 --out results_a099 --verbose
+
+
+

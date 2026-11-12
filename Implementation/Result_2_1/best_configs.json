@@ -1,0 +1,54 @@
+{
+  "settings": {
+    "out": "results_2_1",
+    "steps": 400,
+    "lrs": [
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "batches": [
+      8,
+      32,
+      64,
+      128
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "backend": "gpu",
+    "dtype": "float64"
+  },
+  "best_by_final_mean_gap": {
+    "quadratic": {
+      "problem": "quadratic",
+      "learning_rate": 0.01,
+      "batch_size": 128,
+      "seeds": 10,
+      "steps": 400,
+      "samples_per_run": 51200,
+      "final_gap_mean": 2.6118823503816187e-05,
+      "final_gap_sd": 1.8786030271633693e-05
+    },
+    "simplex": {
+      "problem": "simplex",
+      "learning_rate": 0.03,
+      "batch_size": 128,
+      "seeds": 10,
+      "steps": 400,
+      "samples_per_run": 51200,
+      "final_gap_mean": 2.929548277499222e-06,
+      "final_gap_sd": 3.4799943671791747e-06
+    }
+  }
+}
